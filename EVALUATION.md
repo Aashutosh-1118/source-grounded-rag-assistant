@@ -77,15 +77,3 @@ Output is printed, saved to `evaluation/results/latest.md`, and a timestamped JS
 - The LLM judge is a rough check. Spot check a few of its verdicts by hand.
 - Run the baseline (`vector`) first and keep its numbers. Improvements only mean something next to a baseline.
 
-## What to say in an interview
-
-- "I built a labeled set of N questions, including unanswerable ones, and measured hit rate and MRR for vector, hybrid and hybrid with reranking."
-- "Hybrid retrieval raised hit rate from X to Y because my questions contain exact numbers that embeddings handle poorly."
-- "I tuned the refusal threshold by sweeping it against answerable and unanswerable questions instead of guessing."
-- "Faithfulness is scored by an LLM judge, which I know has limits, so I checked a sample by hand."
-
-Fill in X, Y and N only from your own runs.
-
-## Using RAGAS instead
-
-RAGAS is a popular library that scores faithfulness, answer relevancy and context precision with LLM judges. This project uses a small custom script so there are no extra dependencies and every metric is easy to explain. If an interviewer asks, you can say RAGAS is the standard library for the same idea and the custom harness covers the same ground on a smaller scale.
