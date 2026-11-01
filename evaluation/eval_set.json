@@ -1,0 +1,218 @@
+[
+  {
+    "id": "q01",
+    "question": "At what price per share was the Jio Platforms IPO finally priced?",
+    "answerable": true,
+    "source": "jio_ipo_offer_details.md",
+    "evidence": ["fixed at the top of the band"],
+    "answer_keywords": ["1,119|1119"]
+  },
+  {
+    "id": "q02",
+    "question": "On which dates could investors bid in the Jio IPO?",
+    "answerable": true,
+    "source": "jio_ipo_offer_details.md",
+    "evidence": ["Issue opened: 21 October 2026"],
+    "answer_keywords": ["21 October|October 21|21 Oct|Oct 21", "23 October|October 23|23 Oct|Oct 23"]
+  },
+  {
+    "id": "q03",
+    "question": "How many shares are in one lot, and what was the smallest amount a retail investor had to invest?",
+    "answerable": true,
+    "source": "jio_ipo_offer_details.md",
+    "evidence": ["One lot had 12 shares"],
+    "answer_keywords": ["12", "13,428|13428"]
+  },
+  {
+    "id": "q04",
+    "question": "Did any existing shareholder sell shares in the Jio IPO?",
+    "answerable": true,
+    "source": "jio_ipo_offer_details.md",
+    "evidence": ["There was no offer for sale"],
+    "answer_keywords": ["no offer|entirely fresh|fresh issue|fresh shares|did not sell|not sell|no existing"]
+  },
+  {
+    "id": "q05",
+    "question": "How much of the money raised is planned for repaying debt?",
+    "answerable": true,
+    "source": "jio_ipo_offer_details.md",
+    "evidence": ["Rs 27,500 crore is meant to repay"],
+    "answer_keywords": ["27,500|27500"]
+  },
+  {
+    "id": "q06",
+    "question": "Which anchor investor put in the most money?",
+    "answerable": true,
+    "source": "jio_ipo_offer_details.md",
+    "evidence": ["LIC with Rs 499.98 crore"],
+    "answer_keywords": ["LIC"]
+  },
+  {
+    "id": "q07",
+    "question": "What discount per share did employees get?",
+    "answerable": true,
+    "source": "jio_ipo_offer_details.md",
+    "evidence": ["a discount of Rs 54 per share"],
+    "answer_keywords": ["54"]
+  },
+  {
+    "id": "q08",
+    "question": "On what date did Jio Platforms shares start trading on the exchanges?",
+    "answerable": true,
+    "source": "jio_ipo_offer_details.md",
+    "evidence": ["Listing: 28 October 2026"],
+    "answer_keywords": ["28 October|October 28|28 Oct|Oct 28"]
+  },
+  {
+    "id": "q09",
+    "question": "At what price did Jio shares list on NSE and how big was the premium over the issue price?",
+    "answerable": true,
+    "source": "jio_ipo_subscription_and_listing.md",
+    "evidence": ["the shares listed at Rs 1,358"],
+    "answer_keywords": ["1,358|1358", "21.36"]
+  },
+  {
+    "id": "q10",
+    "question": "How many times was the qualified institutional buyer portion of the IPO subscribed?",
+    "answerable": true,
+    "source": "jio_ipo_subscription_and_listing.md",
+    "evidence": ["QIB 67.15x"],
+    "answer_keywords": ["67.15"]
+  },
+  {
+    "id": "q11",
+    "question": "How strong was demand from small retail investors in the IPO?",
+    "answerable": true,
+    "source": "jio_ipo_subscription_and_listing.md",
+    "evidence": ["retail 2.76x"],
+    "answer_keywords": ["2.76"]
+  },
+  {
+    "id": "q12",
+    "question": "How much market value did Jio add in its first two trading sessions?",
+    "answerable": true,
+    "source": "jio_ipo_subscription_and_listing.md",
+    "evidence": ["almost US$36 billion"],
+    "answer_keywords": ["36"]
+  },
+  {
+    "id": "q13",
+    "question": "What was Jio's market value in US dollars after listing compared with at the IPO price?",
+    "answerable": true,
+    "source": "jio_ipo_subscription_and_listing.md",
+    "evidence": ["about US$144 billion"],
+    "answer_keywords": ["144", "108"]
+  },
+  {
+    "id": "q14",
+    "question": "What profit after tax did Jio Platforms make in FY26?",
+    "answerable": true,
+    "source": "jio_platforms_financials.md",
+    "evidence": ["profit after tax Rs 30,049.10 crore"],
+    "answer_keywords": ["30,049|30049"]
+  },
+  {
+    "id": "q15",
+    "question": "How did the EBITDA margin change between FY25 and FY26?",
+    "answerable": true,
+    "source": "jio_platforms_financials.md",
+    "evidence": ["improved to 51.91 percent in FY26"],
+    "answer_keywords": ["51.91", "50.05"]
+  },
+  {
+    "id": "q16",
+    "question": "How much revenue from operations did the company report for FY25?",
+    "answerable": true,
+    "source": "jio_platforms_financials.md",
+    "evidence": ["revenue from operations Rs 1,28,218.40 crore"],
+    "answer_keywords": ["1,28,218|128,218|128218"]
+  },
+  {
+    "id": "q17",
+    "question": "What percentage of Jio Platforms does Reliance Industries own before and after the IPO?",
+    "answerable": true,
+    "source": "jio_platforms_financials.md",
+    "evidence": ["held 66.43 percent of Jio Platforms before the IPO"],
+    "answer_keywords": ["66.43", "64.48"]
+  },
+  {
+    "id": "q18",
+    "question": "Which Meta-linked entity owns a stake in Jio Platforms and how large is it?",
+    "answerable": true,
+    "source": "jio_platforms_financials.md",
+    "evidence": ["Jaadhu Holdings, an affiliate of Meta"],
+    "answer_keywords": ["Jaadhu", "9.98"]
+  },
+  {
+    "id": "q19",
+    "question": "What was the average revenue per user for the quarter ended 30 June 2026?",
+    "answerable": true,
+    "source": "jio_platforms_financials.md",
+    "evidence": ["Rs 215.6 per month"],
+    "answer_keywords": ["215.6"]
+  },
+  {
+    "id": "q20",
+    "question": "When did Jio Platforms file its draft prospectus with SEBI?",
+    "answerable": true,
+    "source": "jio_ipo_regulatory_timeline.md",
+    "evidence": ["with SEBI on 19 June 2026"],
+    "answer_keywords": ["19 June|June 19"]
+  },
+  {
+    "id": "q21",
+    "question": "When did Jio Platforms receive SEBI's observation letter?",
+    "answerable": true,
+    "source": "jio_ipo_regulatory_timeline.md",
+    "evidence": ["observation letter on 28 August 2026"],
+    "answer_keywords": ["28 August|August 28|28 Aug"]
+  },
+  {
+    "id": "q22",
+    "question": "What valuation range had bankers suggested when the draft prospectus was filed?",
+    "answerable": true,
+    "source": "jio_ipo_regulatory_timeline.md",
+    "evidence": ["$130 billion to $170 billion"],
+    "answer_keywords": ["130", "170"]
+  },
+  {
+    "id": "q23",
+    "question": "Who is the chief executive officer of Jio Platforms?",
+    "answerable": false
+  },
+  {
+    "id": "q24",
+    "question": "Which IPO held the record for India's largest issue before Jio?",
+    "answerable": false
+  },
+  {
+    "id": "q25",
+    "question": "What was the grey market premium for the Jio IPO before it listed?",
+    "answerable": false
+  },
+  {
+    "id": "q26",
+    "question": "At what price did Jio Platforms shares close on 30 October 2026?",
+    "answerable": false
+  },
+  {
+    "id": "q27",
+    "question": "How many 5G users does Jio have?",
+    "answerable": false
+  },
+  {
+    "id": "q28",
+    "question": "What dividend will Jio Platforms pay in its first year as a listed company?",
+    "answerable": false
+  },
+  {
+    "id": "q29",
+    "question": "What is the capital of France?",
+    "answerable": false
+  },
+  {
+    "id": "q30",
+    "question": "How do I bake sourdough bread at home?",
+    "answerable": false
+  }
+]

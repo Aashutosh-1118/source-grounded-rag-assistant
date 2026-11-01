@@ -98,22 +98,42 @@ All settings live in `config.py` and can be overridden in `.env`. See `.env.exam
 
 To add a domain, add one entry to `DOMAIN_PRESETS` in `prompt.py`.
 
+
 ## Evaluation
 
-The project includes a small evaluation harness. See [EVALUATION.md](EVALUATION.md) for what each metric means and how to build a question set from your own documents.
+I measured the system on 30 questions (22 answerable, 8 not covered by the documents) over 4 documents about the Jio Platforms IPO. The documents are research notes written from public news and IPO data sites, saved in `evaluation/corpus/` with their source links. Settings: top 5 passages, chunk size 800, relevance threshold 0.25, embeddings `all-MiniLM-L6-v2`, Groq `openai/gpt-oss-120b`.
+
+**Retrieval: is the right passage in the top 5?**
+
+| Strategy | Hit rate | MRR |
+|---|---|---|
+| Vector search only | 68% (15 of 22) | 0.62 |
+| Hybrid (vector + BM25) | 86% (19 of 22) | 0.69 |
+
+**Answers (hybrid retrieval, strict mode)**
+
+| Metric | Result |
+|---|---|
+| Answer accuracy (answerable questions) | 77% (17 of 22) |
+| Faithfulness (LLM judge) | 100% |
+| Correctly refused (not covered) | 100% (8 of 8) |
+| Wrongly refused (answerable) | 5% (1 of 22) |
+| Latency, average / 95th percentile | 6.1 s / 8.8 s |
+
+What I learned:
+- Hybrid search raised the hit rate from 68% to 86%, because many questions contain exact numbers and names that keyword search finds better than embeddings.
+- The similarity threshold only blocks off-topic questions. Six of the eight uncovered questions were about Jio but not in the documents (CEO, 5G users, dividend and so on), and they score high on similarity. The prompt rule ("say not found if the passages do not contain the answer") refused all of them, so the two layers work together.
+- The reranker option is implemented but was not part of this evaluation.
+
+Caveats: the set is small and the documents are few, so treat the numbers as indicative. Answer accuracy is checked by keyword matching and was not reviewed by hand, so it may undercount correct answers phrased differently. Faithfulness uses an LLM as judge.
+
+Reproduce:
 
 ```bash
-python -m evaluation.run_eval --strategies vector hybrid hybrid_rerank
-python -m evaluation.run_eval --tune-threshold
+python -m evaluation.run_eval --strategies vector hybrid --gen-strategy hybrid --sleep 2
 ```
 
-Results on the included sample set (replace with your own numbers after running):
-
-| Strategy | Hit rate@5 | MRR |
-|---|---|---|
-| vector | run to fill | run to fill |
-| hybrid | run to fill | run to fill |
-| hybrid_rerank | run to fill | run to fill |
+See [EVALUATION.md](EVALUATION.md) for what each metric means and how to build your own question set.
 
 ## Design decisions
 
@@ -131,6 +151,7 @@ Results on the included sample set (replace with your own numbers after running)
 - The URL check does not follow redirects, so a public page that redirects to a private address is not caught.
 - There is no login. Put the API behind authentication before exposing it publicly.
 - The faithfulness score uses an LLM as judge, which is useful but not perfect.
+- Evaluated on a small set (30 questions, 4 documents). Numbers are indicative, not a benchmark.
 
 ## Project layout
 

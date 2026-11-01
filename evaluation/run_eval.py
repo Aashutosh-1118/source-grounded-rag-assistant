@@ -238,7 +238,7 @@ def main(argv=None):
         raise SystemExit("GROQ_API_KEY is not set. Set it, or run with --no-generation.")
 
     print("Building index...")
-    with tempfile.TemporaryDirectory() as tmp:
+    with tempfile.TemporaryDirectory(ignore_cleanup_errors=True) as tmp:
         engine = build_engine(Path(args.corpus), tmp)
 
         retrieval = {}
