@@ -1,21 +1,9 @@
-# Virtual environment
+.env
 .venv/
 venv/
-
-# Environment variables
-.env
-
-# Python cache
 __pycache__/
 *.pyc
-
-# IDE files
-.idea/
-.vscode/
-
-# Jupyter
-.ipynb_checkpoints/
-
-# OS files
+.pytest_cache/
+resources/vectorstore/
+evaluation/results/*.json
 .DS_Store
-Thumbs.db

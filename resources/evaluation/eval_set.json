@@ -1,0 +1,89 @@
+[
+  {
+    "id": "q01",
+    "question": "What was the average 30-year fixed rate in March?",
+    "answerable": true,
+    "source": "home_loan_primer.md",
+    "evidence": ["6.8 percent"],
+    "answer_keywords": ["6.8"]
+  },
+  {
+    "id": "q02",
+    "question": "What is the smallest down payment most lenders ask for?",
+    "answerable": true,
+    "source": "home_loan_primer.md",
+    "evidence": ["at least 5 percent"],
+    "answer_keywords": ["5 percent|5%"]
+  },
+  {
+    "id": "q03",
+    "question": "How much does private mortgage insurance cost each year?",
+    "answerable": true,
+    "source": "home_loan_primer.md",
+    "evidence": ["0.5 and 1.5 percent"],
+    "answer_keywords": ["0.5", "1.5"]
+  },
+  {
+    "id": "q04",
+    "question": "What credit score qualifies for the lowest advertised rates?",
+    "answerable": true,
+    "source": "home_loan_primer.md",
+    "evidence": ["740"],
+    "answer_keywords": ["740"]
+  },
+  {
+    "id": "q05",
+    "question": "What is the minimum down payment for the government-backed loan program?",
+    "answerable": true,
+    "source": "home_loan_primer.md",
+    "evidence": ["3.5 percent"],
+    "answer_keywords": ["3.5"]
+  },
+  {
+    "id": "q06",
+    "question": "What is the prepayment penalty?",
+    "answerable": true,
+    "source": "home_loan_primer.md",
+    "evidence": ["2 percent of the remaining balance"],
+    "answer_keywords": ["2 percent|2%"]
+  },
+  {
+    "id": "q07",
+    "question": "What was the median one-bedroom rent in Riverton in the second quarter?",
+    "answerable": true,
+    "source": "city_rent_report.md",
+    "evidence": ["1,450 dollars"],
+    "answer_keywords": ["1,450|1450"]
+  },
+  {
+    "id": "q08",
+    "question": "What was the citywide vacancy rate?",
+    "answerable": true,
+    "source": "city_rent_report.md",
+    "evidence": ["3.1 percent"],
+    "answer_keywords": ["3.1"]
+  },
+  {
+    "id": "q09",
+    "question": "Which neighborhood has the cheapest one-bedroom rent?",
+    "answerable": true,
+    "source": "city_rent_report.md",
+    "evidence": ["Eastside had the lowest"],
+    "answer_keywords": ["Eastside"]
+  },
+  {
+    "id": "q10",
+    "question": "What is the average home sale price in Riverton?",
+    "answerable": false
+  },
+  {
+    "id": "q11",
+    "question": "Who is the mayor of Riverton?",
+    "answerable": false
+  },
+  {
+    "id": "q12",
+    "question": "What is the capital of France?",
+    "answerable": false
+  }
+]
