@@ -4,7 +4,7 @@
 
 Evaluation is a repeatable test that tells you how good your system is with numbers instead of impressions. You write a set of questions where you already know the right answer, run the system on them, and score the results. When you change something (chunk size, retrieval method, threshold, model), you run it again and see whether the numbers went up or down.
 
-Without this, "I improved the retrieval" is just a feeling. With it, you can say "hit rate went from 67% to 89%".
+Without this, "I improved the retrieval" is just a feeling. With it, you can say what changed: in this project, switching from vector search to hybrid search raised the hit rate from 68% to 86%.
 
 ## What gets measured
 
@@ -22,9 +22,9 @@ Retrieval metrics matter most. If the right passage never reaches the model, no 
 
 ## Build your own question set
 
-The included set in `evaluation/` uses a small made-up corpus so the script runs out of the box. For your resume, use real documents.
+The included set in `evaluation/` has 30 questions over four short notes about the Jio Platforms IPO, so the script runs out of the box. To test your own topic, replace the files as described below.
 
-1. Put 3 to 5 real documents in `evaluation/corpus/` (articles saved as `.md` or `.txt`, or PDFs). Pick a topic you can explain, such as mortgage articles.
+1. Put 3 to 5 real documents in `evaluation/corpus/` (articles saved as `.md` or `.txt`, or PDFs). Pick a topic you can explain, such as economic articles.
 2. Write 20 to 30 questions in `evaluation/eval_set.json`. Roughly 70 percent should be answerable and 30 percent not answerable from your documents.
 3. For each answerable question, fill in:
    - `source`: the file name that contains the answer
@@ -38,11 +38,11 @@ Format of one entry:
 ```json
 {
   "id": "q01",
-  "question": "What was the average 30-year fixed rate in March?",
+  "question": "At what price per share was the Jio Platforms IPO finally priced?",
   "answerable": true,
-  "source": "home_loan_primer.md",
-  "evidence": ["6.8 percent"],
-  "answer_keywords": ["6.8"]
+  "source": "jio_ipo_offer_details.md",
+  "evidence": ["fixed at the top of the band"],
+  "answer_keywords": ["1,119|1119"]
 }
 ```
 

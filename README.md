@@ -80,7 +80,7 @@ Example:
 
 ```bash
 curl -X POST localhost:8000/ask -H "Content-Type: application/json" \
-  -d '{"question": "What was the 30-year fixed rate?", "mode": "strict", "domain": "real_estate"}'
+  -d '{"question": "At what price was the Jio Platforms IPO priced?", "mode": "strict", "domain": "finance"}'
 ```
 
 ## Configuration
